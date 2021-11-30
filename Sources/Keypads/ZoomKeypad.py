@@ -7,10 +7,11 @@ from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 
 class ZoomKeypad():
-    def __init__(self, colour, keyboard, layout, consumer_control):
+    def __init__(self, colour, name, keyboard, layout, consumer_control):
         self.colour = colour
         self._keyboard = keyboard
         self._layout = layout
+        self.name = name
         self._consumer_control = consumer_control
         self.keys = {
                         0: None, 1: None,  2: None, 3: None,
