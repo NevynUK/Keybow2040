@@ -36,6 +36,7 @@ keypads = {
             0: WildernessLabsKeypad.WildernessLabsKeypad((0, 0, 50), 'Build', keyboard, layout, consumer_control),
             1: ZoomKeypad.ZoomKeypad((50, 0, 0), 'Zoom', keyboard, layout, consumer_control)
           }
+
 current_keypad = keypads[0]
 
 current_state = KeypadActivatedState
