@@ -27,8 +27,8 @@ class WildernessLabsKeypad(KeypadBase.KeypadBase):
         self.execute_command('meadow mono enable -s /dev/tty.usbmodem3354336F30361 && meadow listen')
         
     def key3_pressed(self):
-        print('Enable mono one development board in current window')
-        self.execute_command('meadow mono enable -s /dev/tty.usbmodem3354336F30361 && meadow listen')
+        print('Reset the meadow board.')
+        self.execute_command('resetmeadow')
         
     def key6_pressed(self):
         print('Writing application to board')
